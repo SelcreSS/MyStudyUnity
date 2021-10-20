@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Main : MonoBehaviour
@@ -11,10 +9,10 @@ public class Main : MonoBehaviour
             return;
         }
 
-        // 外部からデータを渡す
+        // 外部からデータを渡すPopup
         if( Input.GetMouseButtonDown(0))
         {
-            var data = new TestPopupData(() => StackPopupOpener._Instance.Close(), () => Debug.Log("OK"));
+            var data = new TestPopupData("purchase?", () => StackPopupOpener._Instance.Close(), () => Debug.Log("OK"));
             StackPopupOpener._Instance.Open<TestPopupData>("A_SamplePopup", data);
         }
         // 内部で完結

@@ -10,7 +10,7 @@ public class StackPopupOpener : MonoBehaviour
     private string _displayPopupName;
 
     // TODO
-    // 簡易的に表示厨ポップアップ名があるかでチェック
+    // 簡易的に表示中ポップアップ名があるかでチェック
     public static bool IsOpened => !string.IsNullOrEmpty(_Instance._displayPopupName);
 
     void Awake()
