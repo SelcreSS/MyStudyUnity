@@ -4,9 +4,8 @@ using UnityEngine.Events;
 
 public class TestPrefab2 : PopupSystem<TestPopupData2>
 {
-    private void Start()
+    private void Awake()
     {
-        Debug.Log("Start");
         closeButton.onClick.AddListener(() =>StackPopupOpener._Instance.Close());
     }
 
