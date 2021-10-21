@@ -15,10 +15,10 @@ public class Main : MonoBehaviour
             var data = new TestPopupData("purchase?", () => StackPopupOpener._Instance.Close(), () => Debug.Log("OK"));
             StackPopupOpener._Instance.Open<TestPopupData>("A_SamplePopup", data);
         }
-        // “à•”‚ÅŠ®Œ‹
+        // “à•”‚ÅŠ®Œ‹Popup
         else if(Input.GetMouseButtonDown(1))
         {
-            StackPopupOpener._Instance.Open<TestPopupData2>("B_SamplePopup", new TestPopupData2());
+            StackPopupOpener._Instance.Open("B_SamplePopup");
         }
     }
 }

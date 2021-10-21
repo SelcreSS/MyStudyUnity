@@ -33,6 +33,19 @@ public class StackPopupOpener : MonoBehaviour
         }
     }
 
+    public void Open(string popupName)
+    {
+        Close();
+        foreach (var prefab in _stackPopups)
+        {
+            if (prefab.name == popupName)
+            {
+                _displayPopupName = popupName;
+                prefab.Open();
+            }
+        }
+    }
+
     public void Close()
     {
         foreach (var prefab in _stackPopups)

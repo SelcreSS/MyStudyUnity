@@ -663,7 +663,7 @@ MonoBehaviour:
   root: {fileID: 1389385218148634578}
   closeButton: {fileID: 2372090347852871655}
   okButton: {fileID: 8558641093354578847}
-  text: {fileID: 5174021015139225616}
+  _text: {fileID: 5174021015139225616}
 --- !u!1 &7909860317926626839
 GameObject:
   m_ObjectHideFlags: 0
