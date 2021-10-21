@@ -12,6 +12,7 @@ public class BasePopUp : MonoBehaviour
 	[SerializeField]
 	protected Button okButton;
 
+	public virtual void Open() { }
 	public void Close()
 	{
 		root.SetActive(false);

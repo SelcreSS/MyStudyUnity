@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TestPrefab : PopupSystem<TestPopupData>
 {
     [SerializeField]
-    private Text text;
+    private Text _text;
     public override void Open(TestPopupData setupData)
     {
         root.SetActive(true);
@@ -16,7 +16,7 @@ public class TestPrefab : PopupSystem<TestPopupData>
 
     protected override void Setup(TestPopupData data)
     {
-        text.text = data.text;
+        _text.text = data.text;
         closeButton.onClick.AddListener(data.button1);
         okButton.onClick.AddListener(data.button2);
     }
